@@ -1,7 +1,11 @@
+pub mod level;
+
 #[cfg(test)]
 mod tests {
+    use crate::level::level;
+
     #[test]
-    fn it_works() {
-        assert_eq!(2 + 2, 4);
+    fn load() {
+        level::Level::load(&"")
     }
 }
